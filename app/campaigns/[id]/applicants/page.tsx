@@ -1,4 +1,3 @@
-```tsx
 "use client"
 
 import { TopHeader } from "@/components/top-header"
@@ -177,7 +176,12 @@ const createApplicantFromInfluencer = (influencer: (typeof allInfluencers)[numbe
   trustScore: 4.5,
   appliedAt: "2024-01-02",
   status,
-  message: `안녕하세요! ${influencer.category} 분야에서 활동하고 있는 ${influencer.name}입니다. 브랜드와의 협업에 관심이 많아 지원하게 되었습니다.`,
+ message:
+  "안녕하세요! " +
+  influencer.category +
+  " 분야에서 활동하고 있는 " +
+  influencer.name +
+  "입니다. 브랜드와의 협업에 관심이 많아 지원하게 되었습니다.",
 })
 
 type Filters = {
@@ -651,4 +655,3 @@ export default function CampaignApplicantsPage({ params }: { params: { id: strin
     </div>
   )
 }
-```
